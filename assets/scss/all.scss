@@ -2,8 +2,18 @@
 // 引入格式
 @import "../../node_modules/bootstrap/scss/functions";
 
+// root
+
+@import "../scss/base/root";
+
 // 引入變數-客製化
 @import "../scss/utilities/variables";
 
 // 引入bootstrap全部css
-@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+@import "../scss/base/base";
+@import "../scss/state/hover";
+@import "../scss/utilities/lineHeight";
+@import "../scss/utilities/color";
+@import "../scss/utilities/text";
