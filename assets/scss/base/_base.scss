@@ -11,3 +11,7 @@ body {
 .sans{
   font-family: 'Noto Sans TC', sans-serif;
 }
+
+*,*::before,*::after{
+  box-sizing: border-box !important;
+}

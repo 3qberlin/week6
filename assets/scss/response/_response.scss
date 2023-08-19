@@ -1,0 +1,15 @@
+@mixin rwd($medium) {
+//   @media (min-width: $small) {
+//     @content;
+//   }
+  @media (min-width: $medium) {
+    @content;
+  }
+}
+
+.header img {
+  @include rwd($medium) {
+    width: 55px;
+    height: 55px;
+  }
+}

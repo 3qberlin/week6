@@ -1,0 +1,22 @@
+.wh-{
+    &55px{
+        width: 55px;
+        height:55px;
+    }
+}
+
+.w-{
+    &335px{
+        width: 335px;
+    }
+}
+
+.h-{
+    &55px{
+        height: 55px;
+    }
+}
+
+.headerSearch input::placeholder{
+    transform: translateX(24px);
+}
