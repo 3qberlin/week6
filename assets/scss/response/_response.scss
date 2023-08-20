@@ -18,7 +18,18 @@
 }
 
 .recentContent li:nth-child(2),
-.recentContent li:nth-child(3) {
+.recentContent li:nth-child(3), .activeContent li:nth-child(2)
+, .activeContent li:nth-child(3)
+, .activeContent li:nth-child(4)
+, .activeContent li:nth-child(5)
+, .activeContent li:nth-child(6)
+, .activeContent li:nth-child(7)
+, .activeContent li:nth-child(8)
+, .activeContent li:nth-child(9)
+, .activeContent li:nth-child(10)
+, .activeContent li:nth-child(11)
+, .activeContent li:nth-child(12)
+ {
   margin-top: 48px !important;
   @include rwd($medium) {
     margin-top: 0px !important;
@@ -40,7 +51,7 @@
 }
 
 .recent section h2,
-.online section h2 {
+.online section h2, .activeContent section h2 {
   font-size: 24px;
   @include rwd($medium) {
     font-size: 64px;
@@ -48,7 +59,7 @@
 }
 
 .recent section p,
-.online section p {
+.online section p, .activeContent section p {
   font-size: 16px;
   @include rwd($medium) {
     font-size: 24px;
@@ -93,7 +104,7 @@
   }
 }
 
-.event li {
+.activity li {
   width: 80%;
   margin: 0 auto;
   @include rwd($medium) {
@@ -135,31 +146,7 @@
   }
 }
 
-// .about .row div {
-//   padding: 12px;
-//   margin: 0 auto;
-//   @include rwd($medium) {
-//     padding: 0;
-//   }
-// }
-
-// .about .row > div:nth-child(2) {
-//   margin-top: 24px;
-//   @include rwd($medium) {
-//     margin-top: 0px;
-//   }
-// }
-
-// .subscribeUsTitle,
-// .subscribeUsContent,
-// .aboutButton {
-//   border-left: 2px solid #030303 !important;
-//   @include rwd($medium) {
-//     border-left: 0px !important;
-//   }
-// }
-
-footer h2{
+.notice h2{
   font-size: 18px;
   margin-top: 48px;
   text-align: center;
@@ -169,7 +156,7 @@ footer h2{
   }
 }
 
-footer small{
+.notice small{
   font-size: 14px;
   margin-top: 12px;
   text-align: center;
@@ -187,3 +174,76 @@ footer p{
     padding:32px 0px;
   }
 }
+
+.event ul{
+  margin-top: 12px;
+  @include rwd($medium){
+    margin-top: 32px;
+  }
+}
+
+.event li{
+  display:flex;
+  align-items: center;
+  
+}
+
+.eventContent li:nth-child(2),
+.eventContent li:nth-child(3) {
+  margin-top: 48px !important;
+  @include rwd($medium) {
+    margin-top: 0px !important;
+  }
+}
+
+.eventContent li {
+  width: 100%;
+  @include rwd($medium) {
+    width: 33%;
+  }
+}
+
+.activeContent li:nth-child(2),
+.activeContent li:nth-child(3) {
+  margin-top: 48px !important;
+  @include rwd($medium) {
+    margin-top: 0px !important;
+  }
+}
+
+.acitveContent li {
+  width: 100%;
+  @include rwd($medium) {
+    width: 33%;
+  }
+}
+
+.activeTags{
+  margin-top: 12px;
+  @include rwd($medium){
+    margin-top: 32px;
+  }
+}
+
+.activePage {
+  margin-top: 32px;
+  @include rwd($medium){
+    margin-top: 60px;
+  }
+}
+
+.pagination li:nth-child(n+3):nth-child(-n+5) {
+  margin-left:4px;
+  margin-right:4px;
+}
+
+.pagination li:nth-child(2){
+  margin-left:8px;
+  margin-right:4px;
+}
+
+.pagination li:nth-child(6){
+  margin-left:4px;
+  margin-right:8px;
+}
+

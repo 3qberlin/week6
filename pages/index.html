@@ -28,7 +28,6 @@
     ></script>
   </head>
   <body>
-    <!-- 這裡會 include layout下的 ejs檔案，然後再寫本頁獨有的內容 -->
     <div class="container"><%- include('./layout/nav'); -%></div>
     <%- include('./layout/hr'); -%> <%- include('./layout/navContent'); -%>
     <div class="banner mt-5 border">
@@ -126,12 +125,12 @@
         <li
           class="col d-flex align-items-center justify-content-center flex-column border border-3 bg-primary"
         >
-          <div class="pt-35px pb-35px">
-            <p
-              class="mt-12px fs-2 mb-0 text-center text-secondary text-wrap w-96px"
+          <div class="">
+            <a href="./active.html"
+              class="mt-12px fs-2 mb-0 text-center text-secondary text-wrap text-decoration-none  d-flex justify-content-stretch"
             >
-              探索更多
-            </p>
+              探索<br>更多
+          </a>
           </div>
         </li>
       </ul>
@@ -145,7 +144,6 @@
         <p class="my-auto">近期活動</p>
       </section>
       <div class="recentContent mt-5">
-        <!-- <div class=""> -->
         <ul class="list-unstyled d-flex flex-wrap row row-cols-lg-3">
           <li class="d-flex flex-column col">
             <h4 class="fs-2 border-bottom border-3 pb-12px">19 MAY 2023</h4>
@@ -437,7 +435,7 @@
       </div>
     </div>
     <%- include('./layout/marquee'); -%>
-    <div class="container event">
+    <div class="container activity">
       <ul
         class="row mt-60px list-unstyled d-flex flex-wrap row-cols-1 row-cols-md-4"
       >
@@ -580,16 +578,15 @@
     </div>
     <div class="mt-60px"><%- include('./layout/hr'); -%></div>
 
-    <footer class="footer">
+    <section class="notice">
       <h2>此刻打盹，你將做夢；此刻學習，你將圓夢</h2>
       <small
         class="d-flex justify-content-center border border-3 border-top-0 border-end-0 border-start-0 pb-60px"
         >——我也不知道誰說的</small
       >
-      <p class="d-flex justify-content-center">
-        © 7TAO七逃. All Rights Reserved
-      </p>
-    </footer>
+      
+    </section>
+    <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
