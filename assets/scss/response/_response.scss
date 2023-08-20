@@ -247,3 +247,10 @@ footer p{
   margin-right:8px;
 }
 
+.activePage {
+  margin-bottom: 48px;
+  @include rwd($medium){
+    margin-bottom: 60px;
+  }
+}
+
