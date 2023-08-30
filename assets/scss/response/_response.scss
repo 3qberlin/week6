@@ -51,7 +51,8 @@
 }
 
 .recent section h2,
-.online section h2, .activeContent section h2 {
+.online section h2,
+.activeContent section h2 {
   font-size: 24px;
   @include rwd($medium) {
     font-size: 64px;
@@ -59,7 +60,8 @@
 }
 
 .recent section p,
-.online section p, .activeContent section p {
+.online section p,
+.activeContent section p {
   font-size: 16px;
   @include rwd($medium) {
     font-size: 24px;
@@ -104,13 +106,23 @@
   }
 }
 
-.activity li {
-  width: 80%;
-  margin: 0 auto;
-  @include rwd($medium) {
-    width: 25%;
+
+@include media-breakpoint-down(xxl){
+  .activity li{
+    width: 30%;
+    margin:60px auto;
+  }
+  
+}
+
+@include media-breakpoint-down(lg){
+  .activity li{
+    width: 90%;
+    margin:12px auto;
   }
 }
+
+
 
 .event li:not(:first-child) {
   margin-top: 32px;
@@ -146,46 +158,45 @@
   }
 }
 
-.notice h2{
+.notice h2 {
   font-size: 18px;
   margin-top: 48px;
   text-align: center;
-  @include rwd($medium){
+  @include rwd($medium) {
     font-size: 32px;
     margin-top: 60px;
   }
 }
 
-.notice small{
+.notice small {
   font-size: 14px;
   margin-top: 12px;
   text-align: center;
-  @include rwd($medium){
+  @include rwd($medium) {
     font-size: 18px;
-  margin-top: 16px;
+    margin-top: 16px;
   }
 }
 
-footer p{
+footer p {
   font-size: 14px;
   padding: 24px 0px;
-  @include rwd($medium){
+  @include rwd($medium) {
     font-size: 16px;
-    padding:32px 0px;
+    padding: 32px 0px;
   }
 }
 
-.event ul{
+.event ul {
   margin-top: 12px;
-  @include rwd($medium){
+  @include rwd($medium) {
     margin-top: 32px;
   }
 }
 
-.event li{
-  display:flex;
+.event li {
+  display: flex;
   align-items: center;
-  
 }
 
 .eventContent li:nth-child(2),
@@ -218,39 +229,46 @@ footer p{
   }
 }
 
-.activeTags{
+.activeTags {
   margin-top: 12px;
-  @include rwd($medium){
+  @include rwd($medium) {
     margin-top: 32px;
   }
 }
 
 .activePage {
   margin-top: 32px;
-  @include rwd($medium){
+  @include rwd($medium) {
     margin-top: 60px;
   }
 }
 
-.pagination li:nth-child(n+3):nth-child(-n+5) {
-  margin-left:4px;
-  margin-right:4px;
+.pagination li:nth-child(n + 3):nth-child(-n + 5) {
+  margin-left: 4px;
+  margin-right: 4px;
 }
 
-.pagination li:nth-child(2){
-  margin-left:8px;
-  margin-right:4px;
+.pagination li:nth-child(2) {
+  margin-left: 8px;
+  margin-right: 4px;
 }
 
-.pagination li:nth-child(6){
-  margin-left:4px;
-  margin-right:8px;
+.pagination li:nth-child(6) {
+  margin-left: 4px;
+  margin-right: 8px;
 }
 
 .activePage {
   margin-bottom: 48px;
-  @include rwd($medium){
+  @include rwd($medium) {
     margin-bottom: 60px;
   }
 }
 
+@include media-breakpoint-down(md) {
+  .subscribeUsTitle,
+  .subscribeUsContent,
+  .aboutButton {
+    border-left:2px solid black !important;
+  }
+}

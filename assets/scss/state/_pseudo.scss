@@ -1,13 +1,13 @@
-.memberMobile::after {
-  content: "";
-  border: 3px solid #030303;
-  top: 90px;
-  left: -300px;
-  right: 0;
-  margin: auto;
-  width: 200%;
-  position: absolute;
-}
+// .memberMobile::after {
+//   content: "";
+//   border: 3px solid #030303;
+//   top: 90px;
+//   left: -300px;
+//   right: 0;
+//   margin: auto;
+//   width: 200%;
+//   position: absolute;
+// }
 .h2-transform {
   transform: translate(-50%, -50%) rotate(-4deg);
 }
@@ -17,6 +17,14 @@
     object-fit: cover;
     height: 274px;
   }
+}
+
+.top-94px{
+  top:94px;
+}
+
+.left-50px{
+  left:50px;
 }
 
 .activity li {

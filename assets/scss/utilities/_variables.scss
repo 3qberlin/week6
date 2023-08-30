@@ -395,7 +395,7 @@ $enable-cssgrid: true !default;
 $enable-button-pointers: true !default;
 $enable-rfs: true !default;
 $enable-validation-icons: true !default;
-$enable-negative-margins: false !default;
+$enable-negative-margins: true !default;
 $enable-deprecation-messages: true !default;
 $enable-important-utilities: true !default;
 
@@ -434,6 +434,8 @@ $spacers: (
   3: $spacer,
   4: $spacer * 1.5,
   5: $spacer * 3,
+  7: $spacer * 5,
+  8: $spacer * 6
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -470,7 +472,7 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $primary !default;
-$link-decoration: underline !default;
+$link-decoration: none !default;
 $link-shade-percentage: 20% !default;
 $link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
 $link-hover-decoration: null !default;

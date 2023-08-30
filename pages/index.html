@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
     <link rel="stylesheet" href="../assets/scss/all.scss" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -27,100 +31,117 @@
       referrerpolicy="no-referrer"
     ></script>
   </head>
-  <body>
-    <div class="container"><%- include('./layout/nav'); -%></div>
-    <%- include('./layout/hr'); -%> <%- include('./layout/navContent'); -%>
-    <div class="banner mt-5 border">
-      <div class="bannerContent h-100 d-flex justify-content-between flex-wrap">
-        <h2 class="display-2 text-white ps-5 pt-5">19 MAY 2023</h2>
+  <body class="position-relative">
+    <div class="container">
+      <%- include('./layout/nav'); -%>
+      <div
+        class="hr position-absolute w-100 top-94px border border-2 start-0"
+      ></div>
+      <div class="banner border mt-7">
         <div
-          class="text-center w-100 d-flex align-self-end flex-wrap ps-5 pt-5"
+          class="bannerContent h-100 d-flex justify-content-between flex-wrap"
         >
-          <h3
-            class="fs-5 text-white ps-10 pe-10 text-center w-100 d-none d-md-block"
+          <p class="display-2 text-white ps-5 pt-5">19 MAY 2023</p>
+          <div
+            class="text-center w-100 d-flex align-self-end flex-wrap ps-5 pt-5"
           >
+            <h3
+              class="fs-5 text-white ps-10 pe-10 text-center w-100 d-none d-md-block"
+            >
+              隔牆有耳-沒有草東的派對
+            </h3>
+            <p
+              class="text-center text-white fs-9 ps-10 pe-10 mt-2 d-none d-md-block"
+            >
+              你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
+              帶上啤酒、野餐墊，讓我們在Live
+              House外面一起開場「沒有草東的派對」吧！
+            </p>
+          </div>
+          <h3 class="fs-8 text-white d-block d-md-none text-center w-100">
             隔牆有耳-沒有草東的派對
           </h3>
-          <p
-            class="text-center text-white fs-9 ps-10 pe-10 mt-2 d-none d-md-block"
-          >
-            你各位聽團仔們！每次想跟朋友一起聽草東專場卻每一次都搶不到票？「草東沒有派對」永遠都是「草東沒有門票」！
-            帶上啤酒、野餐墊，讓我們在Live
-            House外面一起開場「沒有草東的派對」吧！
-          </p>
         </div>
-        <h3 class="fs-8 text-white d-block d-md-none text-center w-100">
-          隔牆有耳-沒有草東的派對
-        </h3>
       </div>
     </div>
+    <%- include('./layout/navContent'); -%>
 
     <div class="container category mt-5">
       <ul class="list-unstyled row row-cols-3 row-cols-lg-6 flex-wrap m-0 g-3">
         <li class="col">
-          <div
-            class="pt-35px pb-35px border border-3 w-100 d-flex align-items-center justify-content-center flex-column"
-          >
-            <img
-              src="../assets/images/category/01.png"
-              alt="01"
-              width="80"
-              height="80"
-            />
-            <p class="mt-12px fs-6 mb-0 text-center">演出</p>
-          </div>
+          <a href="#">
+            <div
+              class="pt-35px pb-35px border border-3 w-100 d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/images/category/01.png"
+                alt="01"
+                width="80"
+                height="80"
+              />
+              <p class="mt-12px fs-6 mb-0 text-center">演出</p>
+            </div>
+          </a>
         </li>
         <li class="col">
-          <div
-            class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
-          >
-            <img
-              src="../assets/images/category/02.png"
-              alt="01"
-              width="80"
-              height="80"
-            />
-            <p class="mt-12px fs-6 mb-0 text-center">聯誼</p>
-          </div>
+          <a href="#">
+            <div
+              class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/images/category/02.png"
+                alt="01"
+                width="80"
+                height="80"
+              />
+              <p class="mt-12px fs-6 mb-0 text-center">聯誼</p>
+            </div>
+          </a>
         </li>
         <li class="col">
-          <div
-            class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
-          >
-            <img
-              src="../assets/images/category/03.png"
-              alt="01"
-              width="80"
-              height="80"
-            />
-            <p class="mt-12px fs-6 mb-0 text-center">展覽</p>
-          </div>
+          <a href="#">
+            <div
+              class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/images/category/03.png"
+                alt="01"
+                width="80"
+                height="80"
+              />
+              <p class="mt-12px fs-6 mb-0 text-center">展覽</p>
+            </div>
+          </a>
         </li>
         <li class="col">
-          <div
-            class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
-          >
-            <img
-              src="../assets/images/category/04.png"
-              alt="01"
-              width="80"
-              height="80"
-            />
-            <p class="mt-12px fs-6 mb-0 text-center">美食</p>
-          </div>
+          <a href="#">
+            <div
+              class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/images/category/04.png"
+                alt="01"
+                width="80"
+                height="80"
+              />
+              <p class="mt-12px fs-6 mb-0 text-center">美食</p>
+            </div>
+          </a>
         </li>
         <li class="col">
-          <div
-            class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
-          >
-            <img
-              src="../assets/images/category/05.png"
-              alt="01"
-              width="80"
-              height="80"
-            />
-            <p class="mt-12px fs-6 mb-0 text-center">戶外</p>
-          </div>
+          <a href="#">
+            <div
+              class="pt-35px pb-35px border border-3 d-flex align-items-center justify-content-center flex-column"
+            >
+              <img
+                src="../assets/images/category/05.png"
+                alt="01"
+                width="80"
+                height="80"
+              />
+              <p class="mt-12px fs-6 mb-0 text-center">戶外</p>
+            </div>
+          </a>
         </li>
         <li class="col">
           <div
@@ -147,7 +168,7 @@
       <div class="recentContent mt-5">
         <ul class="list-unstyled d-flex flex-wrap row row-cols-lg-3">
           <li class="d-flex flex-column col">
-            <h4 class="fs-2 border-bottom border-3 pb-12px">19 MAY 2023</h4>
+            <p class="fs-2 border-bottom border-3 pb-12px">19 MAY 2023</p>
             <img
               src="../assets/images/event/01.jpeg"
               alt="01"
@@ -186,7 +207,7 @@
             </div>
           </li>
           <li class="d-flex flex-column col">
-            <h4 class="fs-2 border-bottom border-3 pb-12px">23 MAY 2023</h4>
+            <p class="fs-2 border-bottom border-3 pb-12px">23 MAY 2023</p>
             <img
               src="../assets/images/event/02.jpg"
               alt="01"
@@ -224,7 +245,7 @@
             </div>
           </li>
           <li class="d-flex flex-column col">
-            <h4 class="fs-2 border-bottom border-3 pb-12px">30 MAY 2023</h4>
+            <p class="fs-2 border-bottom border-3 pb-12px">30 MAY 2023</p>
             <img
               src="../assets/images/event/03.jpg"
               alt="01"
@@ -262,7 +283,7 @@
             </div>
           </li>
           <li class="d-flex flex-column col">
-            <h4 class="fs-2 border-bottom border-3 pb-12px">12 JUNE 2023</h4>
+            <p class="fs-2 border-bottom border-3 pb-12px">12 JUNE 2023</p>
             <img
               src="../assets/images/event/04.jpg"
               alt="01"
@@ -301,7 +322,7 @@
             </div>
           </li>
           <li class="d-flex flex-column col">
-            <h4 class="fs-2 border-bottom border-3 pb-12px">25 JUNE 2023</h4>
+            <p class="fs-2 border-bottom border-3 pb-12px">25 JUNE 2023</p>
             <img
               src="../assets/images/event/05.jpg"
               alt="01"
@@ -339,7 +360,7 @@
             </div>
           </li>
           <li class="d-flex flex-column col">
-            <h4 class="fs-2 border-bottom border-3 pb-12px">9 JULY 2023</h4>
+            <p class="fs-2 border-bottom border-3 pb-12px">9 JULY 2023</p>
             <img
               src="../assets/images/event/06.jpg"
               alt="01"
@@ -387,7 +408,7 @@
         <h2 class="mb-0">ONLINE</h2>
         <p class="my-auto">線上活動</p>
       </section>
-      <div class="row d-flex gap-4 flex-wrap flex-lg-nowrap mt-5">
+      <div class="row d-flex gx-3 flex-wrap flex-lg-nowrap mt-5">
         <div class="col-md-7">
           <img
             src="../assets/images/event/online.jpg"
@@ -424,10 +445,10 @@
             這個活動讓大家把自己最有特色的使用方法提出來讓大家參考，也會投票出最有趣的用法。
             該讓其他人知道自己使用 ChatGPT 的姿勢才是最特別的那個了！
           </p>
-          <div class="detailButton d-flex flex-column ">
+          <div class="detailButton d-flex flex-column">
             <button
               type="button"
-              class="bg-primary w-100 text-white text-center"
+              class="bg-primary w-100 text-white text-center py-2"
             >
               查看活動詳情
             </button>
@@ -438,7 +459,7 @@
     <%- include('./layout/marquee'); -%>
     <div class="container activity">
       <ul
-        class="row mt-60px list-unstyled d-flex flex-wrap row-cols-1 row-cols-md-4"
+        class="row mt-60px list-unstyled d-flex flex-wrap row-cols-1 row-cols-lg-4 row-cols-1"
       >
         <li class="col">
           <div
@@ -529,7 +550,7 @@
                     <i class="icofont-ui-email fs-9 text-white"></i>
                   </span>
                 </div>
-                <div class="ms-3">7tao.event@gmail.com</div>
+                <div class="ms-3"><a href="mailto:7tao.event@gmail.com">7tao.event@gmail.com</a></div>
               </li>
               <li class="d-flex mt-3">
                 <div>
@@ -537,7 +558,7 @@
                     <i class="icofont-phone text-white"></i>
                   </span>
                 </div>
-                <div class="ms-3">09123123123</div>
+                <div class="ms-3"><a href="tel:09123123123">09123123123</a></div>
               </li>
               <li class="d-flex mt-3">
                 <div>
@@ -550,12 +571,12 @@
             </ul>
           </div>
         </div>
-        <div class="col g-0 mt-4 mt-md-0">
-          <div class="border border-2 subscribeUsTitle text-uppercase">
+        <div class="col g-0 mt-4 mt-md-0 subscribe">
+          <div class="border border-2 border-start-0 subscribeUsTitle text-uppercase">
             #subscribe us
           </div>
           <div
-            class="border border-2 border-top-0 subscribeUsContent border-bottom-0"
+            class="border border-2 border-top-0 border-start-0 subscribeUsContent border-bottom-0"
           >
             <p>
               訂閱電子報送折價券！<br />
@@ -566,7 +587,7 @@
               <input type="text" class="form-control" placeholder="輸入Email" />
             </div>
           </div>
-          <div class="aboutButton border border-2 border-top-0">
+          <div class="aboutButton border border-2 border-start-0 border-top-0">
             <button
               type="submit"
               class="bg-primary w-100 text-white text-center py-2 fs-7 mt-49px"
@@ -582,11 +603,58 @@
     <section class="notice">
       <h2>此刻打盹，你將做夢；此刻學習，你將圓夢</h2>
       <small
-        class="d-flex justify-content-center border border-3 border-top-0 border-end-0 border-start-0 pb-60px"
-        >——我也不知道誰說的</small
+      class="d-flex justify-content-center border border-3 border-top-0 border-end-0 border-start-0 pb-60px"
+      >——我也不知道誰說的</small
       >
     </section>
     <%- include('./layout/footer'); -%>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        //避免使用者移動到
+        allowTouchMove: false,
+
+        //能呈現幾個.swiper-slide
+        slidesPerView: "auto",
+
+        //跑馬燈的速度(毫秒)
+        speed: 2000,
+
+        //是否重複
+        loop: true,
+
+        autoplay: {
+          //到下一個幻燈片時，停下的時間
+          delay: 0,
+
+          //避免點擊造成跑馬燈失效，視情況增加
+          disableOnInteraction: false,
+        },
+      });
+
+      const swiper2 = new Swiper(".mySwiper2", {
+        //避免使用者移動到
+        allowTouchMove: false,
+
+        //能呈現幾個.swiper-slide
+        slidesPerView: "auto",
+
+        //跑馬燈的速度(毫秒)
+        speed: 2000,
+
+        //是否重複
+        loop: true,
+
+        autoplay: {
+          //到下一個幻燈片時，停下的時間
+          delay: 0,
+
+          //避免點擊造成跑馬燈失效，視情況增加
+          disableOnInteraction: false,
+        },
+      });
+    </script>
+    <!-- <script src="../assets/js/js.js"></script> -->
     <script type="module" src="../main.js"></script>
   </body>
 </html>
